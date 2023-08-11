@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plug & Power - Search Results</title>
+</head>
+<body>
+    <h1>Charging Stations Near Your Location</h1>
+    <ul>
+        {% for station in charging_stations %}
+        <li>
+            <h3>{{ station.name }}</h3>
+            <p>Location: {{ station.location }}</p>
+            <p>Connectors: {{ ', '.join(station.connectors) }}</p>
+            <p>Charging Rate: {{ station.charging_rate }}</p>
+            <p>Occupancy: {{ station.occupancy }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+background-image: url(girl-1561989__480.webp);
+height: 822px;
+font-weight: 800;
+color: #fff;

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plug & Power - Battery Range Results</title>
+</head>
+<body>
+    <h1>Battery Range Estimation Results</h1>
+    {% if is_enough_battery %}
+        <p>Your current battery level is enough to reach the destination charging station.</p>
+    {% else %}
+        <p>Your current battery level is not sufficient to reach the destination charging station. Please find a nearby charging station.</p>
+    {% endif %}
+</body>
+</html>
